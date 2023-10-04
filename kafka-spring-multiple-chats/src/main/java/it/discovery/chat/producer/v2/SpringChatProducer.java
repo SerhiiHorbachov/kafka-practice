@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 import java.util.concurrent.Future;
 
 @RequiredArgsConstructor
-@Component
+//@Component
 public class SpringChatProducer implements ChatProducer<SendResult<String, ChatMessageVO>> {
 
     private final KafkaTemplate<String, ChatMessageVO> kafkaTemplate;
