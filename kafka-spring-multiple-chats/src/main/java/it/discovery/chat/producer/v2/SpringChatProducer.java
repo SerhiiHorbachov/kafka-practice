@@ -24,6 +24,12 @@ public class SpringChatProducer implements ChatProducer<SendResult<String, ChatM
 
         return kafkaTemplate.send(record);
     }
+
+    @Override
+    //TODO:
+    public Future<SendResult<String, ChatMessageVO>> like(MessageId id) {
+        return null;
+    }
 }
 
 
